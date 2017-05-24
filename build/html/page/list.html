@@ -1,0 +1,80 @@
+<div id="wrap">
+    <div class="search">
+            <span>角色
+                <select>
+                    <option value="">全部</option>
+                    <option value="">管理员</option>
+                    <option value="">管理员0</option>
+                    <option value="">管理员2</option>
+                </select>
+            </span>
+            <span>状态
+                <select>
+                    <option value="">全部</option>
+                    <option value="">禁用</option>
+                    <option value="">启用</option>
+                </select>
+            </span>
+        <span>登录名 <input type="text" ng-model="search"><button ng-click="sea()">查询</button></span>
+    </div>
+    <div id="divMain">
+        <table class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>登录名</th>
+                <th>真实姓名</th>
+                <th>角色</th>
+                <th>手机</th>
+                <th>邮箱</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            <tr ng-repeat="item in text|filter:filt">
+                <td>{{item.ID}}</td>
+                <td>{{item.loginname}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.role}}</td>
+                <td>{{item.telephone}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.state}}</td>
+                <td>{{item.creattime|date:"yyyy-MM-dd HH:mm"}}</td>
+                <td><a ng-click="edit(item.ID)">{{item.change}}</a>&nbsp;<a ng-click="del(item.ID)">{{item.delete}}</a></td>
+            </tr>
+        </table>
+        <nav>
+            <ul class="pagination">
+                <li>
+                    <a ng-click="Previous()">
+                        <span>上一页</span>
+                    </a>
+                </li>
+                <li ng-repeat="page in pageList">
+                    <a ng-click="selectPage(page)">{{ page }}</a>
+                </li>
+                <li>
+                    <a ng-click="Next()">
+                        <span>下一页</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="dropup" ng-show="show">
+    <ul>
+        <li ng-model="tar.ID"></li>
+        <li><input type="text" ng-model="tar.loginname"></li>
+        <li><input type="text" ng-model="tar.name"></li>
+        <li><input type="text" ng-model="tar.role"></li>
+        <li><input type="text" ng-model="tar.telephone"></li>
+        <li><input type="text" ng-model="tar.email"></li>
+        <li><input type="text" ng-model="tar.state"></li>
+        <li><input type="text" ng-model="tar.creattime"></li>
+        <li>
+            <button ng-click="ok(item.ID)">确定</button>
+            <button ng-click="no(item.ID)">取消</button>
+        </li>
+    </ul>
+</div>
