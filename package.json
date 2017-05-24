@@ -9,7 +9,8 @@
   "devDependencies": {
     "gulp": "*",
     "gulp-uglify": "*",
-    "gulp-clean-css":"*"
+    "gulp-clean-css":"*",
+    "gulp-webserver":"*"
   },
   "author": "",
   "license": "ISC"
