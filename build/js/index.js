@@ -1,7 +1,4 @@
-/**
- * Created by Administrator on 2017/5/24.
- */
-var app = angular.module("myapp", ['ui.router']);
+var app=angular.module('myapp',["ui.router"]);
 app.service('alldata',function() {
     return {
         fstdata:[
@@ -152,6 +149,214 @@ app.service('alldata',function() {
                 creattime:'2014-07-27 16:56',
                 change:'修改',
                 delete:'删除'
+            },
+            {
+                ID:9,
+                parentid:23,
+                loginname:'zhangsan',
+                name:'张三',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:10,
+                parentid:23,
+                loginname:'lisi',
+                name:'李四',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:11,
+                parentid:23,
+                loginname:'wangwu',
+                name:'王五',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:12,
+                parentid:23,
+                loginname:'zhangchen',
+                name:'张晨',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:13,
+                parentid:23,
+                loginname:'liucheng',
+                name:'刘成',
+                role:'管理员',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:14,
+                parentid:23,
+                loginname:'liji',
+                name:'李继',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:15,
+                parentid:23,
+                loginname:'yuantao',
+                name:'袁涛',
+                role:'13管理',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:16,
+                parentid:23,
+                loginname:'wangjian',
+                name:'王建',
+                role:'管理员',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:17,
+                parentid:23,
+                loginname:'zhangsan',
+                name:'张三',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:18,
+                parentid:23,
+                loginname:'lisi',
+                name:'李四',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:19,
+                parentid:23,
+                loginname:'wangwu',
+                name:'王五',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:20,
+                parentid:23,
+                loginname:'zhangchen',
+                name:'张晨',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:21,
+                parentid:23,
+                loginname:'liucheng',
+                name:'刘成',
+                role:'管理员',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:22,
+                parentid:23,
+                loginname:'liji',
+                name:'李继',
+                role:'13管理员aaa',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:23,
+                parentid:23,
+                loginname:'yuantao',
+                name:'袁涛',
+                role:'13管理',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'启用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
+            },
+            {
+                ID:24,
+                parentid:23,
+                loginname:'wangjian',
+                name:'王建',
+                role:'管理员',
+                telephone:'15098950322',
+                email:'837990335@qq.com',
+                state:'禁用',
+                creattime:'2014-07-27 16:56',
+                change:'修改',
+                delete:'删除'
             }
         ],
         fourdata:[
@@ -236,6 +441,85 @@ app.service('alldata',function() {
         ]
     }
 });
+app.service("cutpage",function () {
+    return function ($scope) {
+        var oldData=$scope.fileData();
+        $scope.allPage=Math.ceil(oldData.length/$scope.maxLength);
+        $scope.pageArr=[];
+        for(var i=2;i<$scope.allPage;i++){
+            $scope.pageArr.push(i)
+        }
+        $scope.len=($scope.middlePage-1)/2;
+        $scope.pageShow=function (i) {
+            $scope.index=i-1;
+            $scope.showStatue1=false;
+            $scope.showStatue2=false;
+            if($scope.index<$scope.middlePage-$scope.len){
+                $scope.showStatue1=false;
+                $scope.showStatue2=true;
+                $scope.showArr=[];
+                for(var i=1;i<=$scope.middlePage;i++){
+                    $scope.showArr.push(i)
+                }
+
+            }else if($scope.index>=$scope.middlePage-$scope.len&&$scope.index<=$scope.allPage-($scope.middlePage-1)/2-2){
+                $scope.showStatue1=true;
+                $scope.showStatue2=true;
+                if($scope.index==$scope.middlePage-$scope.len){
+                    $scope.showStatue1=false;
+                }
+                if($scope.index==$scope.allPage-($scope.middlePage-1)/2-2){
+                    $scope.showStatue2=false;
+                }
+
+                $scope.showArr=[$scope.index+1];
+                for(var i=0;i<$scope.len;i++){
+                    $scope.showArr.push($scope.index-i)
+                }
+                for(var i=2;i<=$scope.len+1;i++){
+                    $scope.showArr.push($scope.index+i)
+                }
+            }else{
+                $scope.showStatue1=true;
+                $scope.showStatue2=false;
+                $scope.showArr=[];
+                for(var i=1;i<$scope.middlePage;i++){
+                    $scope.showArr.push($scope.allPage-i)
+                }
+            }
+            if($scope.allPage<=6){
+                $scope.showStatue1=false;
+                $scope.showStatue2=false;
+            }
+            $scope.cutDataFn()
+        };
+
+        $scope.cutDataFn=function () {
+            var newdata=$scope.fileData();
+            $scope.cutoutData=newdata.splice($scope.index*$scope.maxLength,$scope.maxLength)
+        };
+        $scope.changeIndexFn=function (i) {
+            $scope.pageShow(i)
+
+        };
+        $scope.updownFn=function (i) {
+            if(i=="+"){
+                if(($scope.index+1)< $scope.allPage){
+                    $scope.pageShow($scope.index+2)
+                }
+            }else{
+                if($scope.index>0){
+                    $scope.pageShow($scope.index)
+                }
+            }
+        };
+        $scope.changeInput=function () {
+            $scope.pageShow($scope.valueDATA)
+
+        };
+        $scope.pageShow(1)
+    }
+});
 var num=100;
 app.config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/user');
@@ -259,36 +543,7 @@ app.config(function($stateProvider,$urlRouterProvider){
         .state('user',{
             url:"/user",
             templateUrl:"page/list.html",
-            controller:function($scope,alldata) {
-                //分页
-                $scope.alldata = alldata.thirdata;
-                $scope.num = 2;//每页显示的个数
-                $scope.length = $scope.alldata.length;//总长度
-                $scope.pages = Math.ceil($scope.length / $scope.num); //得到页数
-                $scope.pageList = [];//生成页码，在 html里 ng-repeat 出来
-                for (var i = 1; i <= $scope.pages; i++) {
-                    $scope.pageList.push(i);
-                }
-                //初始页面显示
-                $scope.text = $scope.alldata.slice(0, $scope.num);
-                //分页显示
-                $scope.current = 1;
-                $scope.selectPage = function (page) {
-                    $scope.current = page;
-                    $scope.text = $scope.alldata.slice(($scope.current - 1) * $scope.num, $scope.current * $scope.num)
-                };
-                //上一页
-                $scope.Previous = function () {
-                    if($scope.current>1) {
-                        $scope.selectPage($scope.current - 1);
-                    }
-                };
-                //下一页
-                $scope.Next = function () {
-                    if($scope.current<$scope.pages){
-                        $scope.selectPage($scope.current + 1);
-                    }
-                };
+            controller:function($scope,cutpage) {
                 //查询
                 $scope.filt={};
                 $(document).on('keyup',function(e){
@@ -301,10 +556,12 @@ app.config(function($stateProvider,$urlRouterProvider){
                 $scope.sea=function(){
                     $scope.filt=$scope.search;
                 };
+                cutpage($scope);
                 //修改
                 $scope.edit = function (id) {
+                    $scope.cutDataFn();
                     $scope.show = true;
-                    $scope.text.forEach(function (item, index) {
+                    $scope.cutoutData.forEach(function (item) {
                         if (item.ID == id) {
                             $scope.tar = {};
                             for (var k in item) {
@@ -315,10 +572,10 @@ app.config(function($stateProvider,$urlRouterProvider){
                 };
                 //确定
                 $scope.ok = function () {
-                    $scope.text.forEach(function (item, index) {
+                    $scope.cutoutData.forEach(function (item, index) {
                         if (item.ID == $scope.tar.ID) {
                             $scope.show = false;
-                            $scope.text[index] = $scope.tar;
+                            $scope.cutoutData[index] = $scope.tar;
                         }
                     });
                 };
@@ -328,33 +585,29 @@ app.config(function($stateProvider,$urlRouterProvider){
                 };
                 //删除
                 $scope.del = function (id) {
-                    $scope.text.forEach(function (item, index) {
+                    $scope.data.forEach(function (item, index) {
                         if (item.ID == id) {
-                            $scope.text.splice(index, 1)
+                            $scope.data.splice(index, 1)
                         }
                     });
+                    cutpage($scope);
                 };
             }
         })
 });
-app.controller("all", function ($scope, alldata) {
-    $scope.alldata = alldata.thirdata;
-    $scope.num = 2;//每页显示的个数
-    $scope.length = $scope.alldata.length;//总长度
-    $scope.pages = Math.ceil($scope.length / $scope.num); //得到页数
-    $scope.pageList = [];//生成页码，在 html里 ng-repeat 出来
-    for (var i = 1; i <= $scope.pages; i++) {
-        $scope.pageList.push(i);
-    }
-    //初始页面显示
-    $scope.text = $scope.alldata.slice(0, $scope.num);
-    //分页显示
-    $scope.current = 1;
-    $scope.selectPage = function (page) {
-        $scope.current = page;
-        $scope.text = $scope.alldata.slice(($scope.current - 1) * $scope.num, $scope.current * $scope.num)
+app.controller("all",function ($scope,alldata,cutpage) {
+    $scope.data=alldata.thirdata;
+    $scope.fileData=function () {
+        return alldata.thirdata.map(function (i) {
+            return i
+        })
     };
+//        每一页显示的数据长度
+    $scope.maxLength=2;
+//        定义中间页数显示的长度,只能为奇数；
+    $scope.middlePage=5;
+    cutpage($scope);
     $scope.$on('addData',function(e,d){
-        $scope.alldata.push(d.data);
+        $scope.data.push(d.data);
     })
-});
+})

@@ -1,4 +1,4 @@
-<div id="wrap">
+<div id="p">
     <div class="search">
             <span>角色
                 <select>
@@ -30,7 +30,7 @@
                 <th>创建时间</th>
                 <th>操作</th>
             </tr>
-            <tr ng-repeat="item in text|filter:filt">
+            <tr ng-repeat="item in cutoutData|filter:filt">
                 <td>{{item.ID}}</td>
                 <td>{{item.loginname}}</td>
                 <td>{{item.name}}</td>
@@ -42,23 +42,16 @@
                 <td><a ng-click="edit(item.ID)">{{item.change}}</a>&nbsp;<a ng-click="del(item.ID)">{{item.delete}}</a></td>
             </tr>
         </table>
-        <nav>
-            <ul class="pagination">
-                <li>
-                    <a ng-click="Previous()">
-                        <span>上一页</span>
-                    </a>
-                </li>
-                <li ng-repeat="page in pageList">
-                    <a ng-click="selectPage(page)">{{ page }}</a>
-                </li>
-                <li>
-                    <a ng-click="Next()">
-                        <span>下一页</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="page">
+            <span  class="anniu1" ng-click="updownFn('-')">上一页</span>
+            <span class="annius" ng-class="{back:(index+1)==1}" ng-click="changeIndexFn(1)">1</span>
+            <span class="annius" ng-show="showStatue1">...</span>
+            <span ng-repeat="i in pageArr" ng-show="showArr.indexOf(i)!=-1" class="annius" ng-class="{back:(index+1)==i}" ng-click="changeIndexFn(i)">{{i}}</span>
+            <span  class="annius" ng-show="showStatue2">...</span>
+            <span class="annius" ng-class="{back:(index+1)==allPage}" ng-click="changeIndexFn(allPage)">{{allPage}}</span>
+            <span  class="anniu1" ng-click="updownFn('+')">下一页</span>
+            第<input type="number" min="1" max="{{allPage}}" ng-change="changeInput()" ng-model="valueDATA" style="width:50px;"/>页
+        </div>
     </div>
 </div>
 

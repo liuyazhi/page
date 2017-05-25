@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>demo</title>
+    <meta charset="UTF-8">
+    <title>page</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/common/angular.js"></script>
+    <script src="../js/common/angular-ui-router.js"></script>
+    <script src="../js/common/jquery.js"></script>
 </head>
 <body ng-app="myapp" ng-controller="all">
-<aside>
-    <ul>
-        <li ui-sref="add">添加用户</li>
-        <li ui-sref="user">用户管理</li>
-    </ul>
-</aside>
-<div ui-view></div>
-<script src="../js/common/angular.js"></script>
-<script src="../js/common/angular-ui-router.js"></script>
-<script src="../js/common/jquery.js"></script>
+<div id="wrapper">
+    <aside>
+        <h5>通用权限系统</h5>
+        <ul>
+            <li ui-sref="add">添加用户</li>
+            <li ui-sref="user">用户管理</li>
+        </ul>
+    </aside>
+    <div class="right">
+        <ul class="r-head">
+            <li>个人中心</li>
+            <li>系统设置</li>
+        </ul>
+        <div ui-view></div>
+    </div>
+</div>
 <script src="../js/index.js"></script>
 </body>
 </html>
