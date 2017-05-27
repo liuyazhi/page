@@ -38,7 +38,7 @@ app.config(function (alldata,$stateProvider,$urlRouterProvider) {
                         };
                         //console.log($scope.fileData())
 //        每一页显示的数据长度
-                        $scope.maxLength=3;
+                        $scope.maxLength=1;
 //        定义中间页数显示的长度,只能为奇数；
                         $scope.middlePage=5;
                         cutpage($scope);
